@@ -36,8 +36,8 @@ export default function Courses() {
   return (
     <section id="conocimiento" className="bg-white border-y border-brand-100">
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <p className="section-sub">09 — Acceso universal al conocimiento</p>
-        <h2 className="section-title">Cursos abiertos en YouTube</h2>
+        <p className="section-sub">09 — Formación abierta</p>
+        <h2 className="section-title">Acceso Universal al Conocimiento</h2>
         <p className="mt-4 max-w-3xl text-brand-900/80 leading-relaxed">
           {knowledgeAccess.intro}
         </p>

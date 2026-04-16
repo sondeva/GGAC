@@ -7,7 +7,7 @@ export default function Nav() {
     { id: "publicaciones", label: "Publicaciones" },
     { id: "proyectos", label: "Proyectos" },
     { id: "distinciones", label: "Distinciones" },
-    { id: "conocimiento", label: "Cursos" },
+    { id: "conocimiento", label: "Acceso Universal al Conocimiento" },
     { id: "contacto", label: "Contacto" },
   ];
   return (
