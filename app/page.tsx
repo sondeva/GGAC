@@ -7,6 +7,7 @@ import Experience from "@/components/Experience";
 import Publications from "@/components/Publications";
 import Projects from "@/components/Projects";
 import Awards from "@/components/Awards";
+import Courses from "@/components/Courses";
 import Contact from "@/components/Contact";
 
 export default function Page() {
@@ -21,6 +22,7 @@ export default function Page() {
       <Publications />
       <Projects />
       <Awards />
+      <Courses />
       <Contact />
     </main>
   );
