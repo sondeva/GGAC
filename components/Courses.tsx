@@ -109,7 +109,11 @@ export default function Courses() {
         </p>
         <p className="mt-2 font-serif italic text-brand-700">“{knowledgeAccess.tagline}”</p>
 
-        <div className="mt-10 grid md:grid-cols-2 gap-6">
+        <div
+          className={`mt-10 grid gap-6 ${
+            courses.length === 1 ? "md:max-w-3xl md:mx-auto" : "md:grid-cols-2"
+          }`}
+        >
           {courses.map((c) => (
             <CourseCard key={c.slug} course={c} />
           ))}
