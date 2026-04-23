@@ -298,34 +298,87 @@ export type Course = {
   status: "Próximamente" | "Disponible";
 };
 
-export const courses: Course[] = [
+const excelLessons: { n: string; title: string; youtubeId: string; desc: string }[] = [
   {
-    slug: "curso-excel",
-    title: "Curso de Excel",
-    topic: "Herramientas cuantitativas",
-    level: "Introductorio",
-    duration: "~6 horas",
-    lessons: 11,
+    n: "01",
+    title: "Introducción",
     youtubeId: "8GkY7tlyzgU",
-    playlistId: null,
-    videos: [
-      { title: "01 — Introducción", youtubeId: "8GkY7tlyzgU" },
-      { title: "02 — Tabla de multiplicar", youtubeId: "uD_g5CsdbgE" },
-      { title: "03 — Autorrelleno y rangos de celda", youtubeId: "S4ZGCPg4FHM" },
-      { title: "04 — Funciones estadísticas", youtubeId: "3Z244RW0k9c" },
-      { title: "05 — Caso práctico", youtubeId: "ecfPokTChEg" },
-      { title: "06 — Tabla de frecuencias", youtubeId: "sCa7tc_YxRw" },
-      { title: "07 — Ordenar datos", youtubeId: "qPX_9RX7CHU" },
-      { title: "08 — Subtotales", youtubeId: "Gh8ju9Jv5kM" },
-      { title: "09 — Filtros", youtubeId: "BG5bZ7LsJtc" },
-      { title: "10 — Gráficos", youtubeId: "iZ1-Af7frUo" },
-      { title: "11 — Tabla dinámica", youtubeId: "wM90Z5zcqzQ" },
-    ],
-    description:
-      "Curso introductorio y práctico de Microsoft Excel: desde autorrelleno y funciones estadísticas hasta filtros, subtotales, gráficos y tablas dinámicas. Orientado a estudiantes y profesionales de ciencias administrativas.",
-    status: "Disponible",
+    desc: "Primer acercamiento a la interfaz de Excel: libros, hojas, celdas y operaciones básicas.",
+  },
+  {
+    n: "02",
+    title: "Tabla de multiplicar",
+    youtubeId: "uD_g5CsdbgE",
+    desc: "Construcción de una tabla de multiplicar usando referencias absolutas y relativas.",
+  },
+  {
+    n: "03",
+    title: "Autorrelleno y rangos de celda",
+    youtubeId: "S4ZGCPg4FHM",
+    desc: "Uso del autorrelleno, series y selección de rangos para acelerar el trabajo.",
+  },
+  {
+    n: "04",
+    title: "Funciones estadísticas",
+    youtubeId: "3Z244RW0k9c",
+    desc: "Promedio, mediana, moda, desviación estándar y otras funciones básicas de estadística.",
+  },
+  {
+    n: "05",
+    title: "Caso práctico",
+    youtubeId: "ecfPokTChEg",
+    desc: "Aplicación integradora de funciones y fórmulas a un caso de estudio real.",
+  },
+  {
+    n: "06",
+    title: "Tabla de frecuencias",
+    youtubeId: "sCa7tc_YxRw",
+    desc: "Elaboración de tablas de frecuencias absolutas, relativas y acumuladas.",
+  },
+  {
+    n: "07",
+    title: "Ordenar datos",
+    youtubeId: "qPX_9RX7CHU",
+    desc: "Ordenamientos simples y personalizados, criterios múltiples y buenas prácticas.",
+  },
+  {
+    n: "08",
+    title: "Subtotales",
+    youtubeId: "Gh8ju9Jv5kM",
+    desc: "Generación de subtotales automáticos y agrupación de datos por categoría.",
+  },
+  {
+    n: "09",
+    title: "Filtros",
+    youtubeId: "BG5bZ7LsJtc",
+    desc: "Filtros simples, avanzados y segmentación para análisis de bases de datos.",
+  },
+  {
+    n: "10",
+    title: "Gráficos",
+    youtubeId: "iZ1-Af7frUo",
+    desc: "Diseño y personalización de gráficos para comunicar resultados de forma efectiva.",
+  },
+  {
+    n: "11",
+    title: "Tabla dinámica",
+    youtubeId: "wM90Z5zcqzQ",
+    desc: "Creación y análisis con tablas dinámicas para resumir grandes volúmenes de información.",
   },
 ];
+
+export const courses: Course[] = excelLessons.map((l) => ({
+  slug: `curso-excel-${l.n}`,
+  title: `Curso de Excel ${l.n} — ${l.title}`,
+  topic: "Microsoft Excel · Herramientas cuantitativas",
+  level: "Introductorio",
+  duration: "Video",
+  lessons: 1,
+  youtubeId: l.youtubeId,
+  playlistId: null,
+  description: l.desc,
+  status: "Disponible",
+}));
 
 export const knowledgeAccess = {
   tagline: "Conocimiento abierto, gratuito y para todos.",

@@ -89,9 +89,16 @@ function CourseCard({ course }: { course: Course }) {
 
         <div className="mt-4 flex flex-wrap gap-2 text-xs">
           <span className="chip">{course.level}</span>
-          <span className="chip">{course.lessons} lecciones</span>
           <span className="chip">{course.duration}</span>
           <span className="chip">Gratuito</span>
+          <a
+            href={`https://youtu.be/${course.youtubeId}`}
+            target="_blank"
+            rel="noreferrer"
+            className="chip hover:bg-brand-100"
+          >
+            Ver en YouTube ↗
+          </a>
         </div>
       </div>
     </article>
@@ -109,11 +116,12 @@ export default function Courses() {
         </p>
         <p className="mt-2 font-serif italic text-brand-700">“{knowledgeAccess.tagline}”</p>
 
-        <div
-          className={`mt-10 grid gap-6 ${
-            courses.length === 1 ? "md:max-w-3xl md:mx-auto" : "md:grid-cols-2"
-          }`}
-        >
+        <div className="mt-6 flex items-center gap-3 text-sm text-brand-700">
+          <span className="chip">{courses.length} cursos disponibles</span>
+          <span className="text-brand-500">Todos abiertos y gratuitos en YouTube</span>
+        </div>
+
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {courses.map((c) => (
             <CourseCard key={c.slug} course={c} />
           ))}
