@@ -282,6 +282,8 @@ export const evaluations = [
   "Fondo C0009-2014-01 / C0009-2024-01",
 ];
 
+export type Lesson = { title: string; youtubeId: string };
+
 export type Course = {
   slug: string;
   title: string;
@@ -291,11 +293,38 @@ export type Course = {
   lessons: number;
   youtubeId: string | null;
   playlistId: string | null;
+  videos?: Lesson[];
   description: string;
   status: "Próximamente" | "Disponible";
 };
 
 export const courses: Course[] = [
+  {
+    slug: "curso-excel",
+    title: "Curso de Excel",
+    topic: "Herramientas cuantitativas",
+    level: "Introductorio",
+    duration: "~6 horas",
+    lessons: 11,
+    youtubeId: "8GkY7tlyzgU",
+    playlistId: null,
+    videos: [
+      { title: "01 — Introducción", youtubeId: "8GkY7tlyzgU" },
+      { title: "02 — Tabla de multiplicar", youtubeId: "uD_g5CsdbgE" },
+      { title: "03 — Autorrelleno y rangos de celda", youtubeId: "S4ZGCPg4FHM" },
+      { title: "04 — Funciones estadísticas", youtubeId: "3Z244RW0k9c" },
+      { title: "05 — Caso práctico", youtubeId: "ecfPokTChEg" },
+      { title: "06 — Tabla de frecuencias", youtubeId: "sCa7tc_YxRw" },
+      { title: "07 — Ordenar datos", youtubeId: "qPX_9RX7CHU" },
+      { title: "08 — Subtotales", youtubeId: "Gh8ju9Jv5kM" },
+      { title: "09 — Filtros", youtubeId: "BG5bZ7LsJtc" },
+      { title: "10 — Gráficos", youtubeId: "iZ1-Af7frUo" },
+      { title: "11 — Tabla dinámica", youtubeId: "wM90Z5zcqzQ" },
+    ],
+    description:
+      "Curso introductorio y práctico de Microsoft Excel: desde autorrelleno y funciones estadísticas hasta filtros, subtotales, gráficos y tablas dinámicas. Orientado a estudiantes y profesionales de ciencias administrativas.",
+    status: "Disponible",
+  },
   {
     slug: "logica-borrosa-administracion",
     title: "Introducción a la Lógica Borrosa aplicada a la Administración",
