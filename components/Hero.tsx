@@ -5,8 +5,13 @@ export default function Hero() {
     <section id="top" className="max-w-6xl mx-auto px-6 pt-14 pb-16">
       <div className="grid md:grid-cols-[220px_1fr] gap-10 items-center">
         <div className="flex justify-center md:justify-start">
-          <div className="w-48 h-48 rounded-full bg-gradient-to-br from-brand-200 to-brand-500 border-4 border-white shadow-lg flex items-center justify-center text-white font-serif text-5xl select-none">
-            GA
+          <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg bg-brand-100 ring-1 ring-brand-200">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/alfaro.jpg"
+              alt="Dr. Gerardo Gabriel Alfaro Calderón"
+              className="w-full h-full object-cover object-center"
+            />
           </div>
         </div>
         <div>
