@@ -1,89 +1,110 @@
 export const profile = {
   name: "Gerardo Gabriel Alfaro Calderón",
-  title: "Profesor e Investigador Titular",
+  title: "Investigador Titular “C” T.C.",
   institution: "Universidad Michoacana de San Nicolás de Hidalgo",
   faculty: "Facultad de Contaduría y Ciencias Administrativas (FCCA)",
   location: "Morelia, Michoacán, México",
   cvu: "253225",
-  sni: "SNI Nivel II (2021–2026)",
-  email: "galfaro@umich.mx",
+  sni: "SNI Nivel II",
+  email: "ggalfaroc@gmail.com",
+  scholarId: "xalUPyQAAAAJ",
   summary:
-    "Doctor en Ciencias en Negocios Internacionales con una trayectoria académica de más de dos décadas en la UMSNH. Su línea de investigación se centra en sistemas difusos, inteligentes y expertos aplicados a la gestión empresarial, la innovación, la competitividad de PyMEs y el análisis multicriterio. Miembro del Sistema Nacional de Investigadores Nivel II e integrante del Cuerpo Académico Consolidado UMSNH-CA-11.",
+    "Doctor en Ciencias Administrativas por el Centro de Investigación y Desarrollo del Estado de Michoacán (CIDEM, 2007), con Maestría en Administración por la FCCA-UMSNH e Ingeniero Industrial por el Instituto Tecnológico de Morelia. Investigador Titular de tiempo completo en la UMSNH, miembro del Sistema Nacional de Investigadores Nivel II y representante del Cuerpo Académico “Economía y Modelos Cuantitativos”. Sus líneas de investigación son los modelos cuantitativos y cualitativos en la toma de decisiones y la mejora y gestión empresarial, con aplicaciones en sistemas difusos, teoría de efectos olvidados, gestión del conocimiento y competitividad de PyMEs.",
   areas: [
     {
-      title: "Sistemas Difusos e Inteligentes",
-      desc: "Lógica borrosa, efectos olvidados, OWA logarítmicos y modelos expertos aplicados a la toma de decisiones.",
+      title: "Modelos Cuantitativos y Cualitativos en la Toma de Decisiones",
+      desc: "Lógica borrosa, teoría de efectos olvidados (Kaufmann – Gil Aluja), operadores OWA logarítmicos y análisis multicriterio.",
     },
     {
-      title: "Gestión e Innovación Empresarial",
-      desc: "Capacidades de innovación, aprendizaje organizacional y ventaja competitiva en PyMEs manufactureras.",
+      title: "Mejora y Gestión Empresarial",
+      desc: "Gestión del conocimiento, planeación estratégica, capacidades de innovación y competitividad de PyMEs manufactureras.",
     },
     {
-      title: "Clusterización y Sustentabilidad",
-      desc: "Modelos de clusterización de empresas sustentables, valor sustentable y desarrollo regional.",
+      title: "Sustentabilidad y Desarrollo Regional",
+      desc: "Clusterización de empresas sustentables, valor sustentable, responsabilidad social empresarial y desarrollo territorial.",
     },
     {
-      title: "Formación de Capital Humano",
-      desc: "Diseño y reforma de programas de posgrado, dirección de tesis y consolidación de cuerpos académicos.",
+      title: "Formación de Capital Humano e Investigadores",
+      desc: "Dirección de tesis de posgrado, consolidación de cuerpos académicos y participación en redes temáticas CONACYT.",
     },
   ],
 };
 
 export const stats = [
-  { value: "15+", label: "Publicaciones indexadas" },
-  { value: "5", label: "Proyectos CIC-UMSNH" },
-  { value: "SNI II", label: "2021–2026" },
-  { value: "20+", label: "Años de trayectoria" },
+  { value: "30+", label: "Artículos arbitrados" },
+  { value: "50+", label: "Capítulos de libro" },
+  { value: "SNI II", label: "CONACYT / CONAHCYT" },
+  { value: "2007", label: "Doctor en Cs. Administrativas" },
 ];
 
 export const education = [
   {
     flag: "🇲🇽",
-    degree: "Doctorado en Ciencias en Negocios Internacionales",
-    inst: "Universidad Michoacana de San Nicolás de Hidalgo",
-    place: "Morelia, México",
-    years: "",
+    degree: "Doctorado en Ciencias Administrativas",
+    inst: "Centro de Investigación y Desarrollo del Estado de Michoacán (CIDEM)",
+    place: "Morelia, Michoacán, México",
+    years: "2007",
     notes:
-      "Formación doctoral con especialización en métodos cuantitativos avanzados y sistemas expertos aplicados a la administración.",
+      "Formación doctoral con énfasis en modelos cuantitativos aplicados a la toma de decisiones en organizaciones.",
   },
   {
     flag: "🇲🇽",
     degree: "Maestría en Administración",
-    inst: "Universidad Michoacana de San Nicolás de Hidalgo — FCCA",
-    place: "Morelia, México",
+    inst: "Facultad de Contaduría y Ciencias Administrativas — UMSNH",
+    place: "Morelia, Michoacán, México",
     years: "",
-    notes: "Posgrado orientado a la gestión estratégica y la innovación empresarial.",
+    notes: "Posgrado orientado a la gestión estratégica y la administración de organizaciones.",
   },
   {
     flag: "🇲🇽",
-    degree: "Licenciatura en Contaduría / Administración",
-    inst: "Universidad Michoacana de San Nicolás de Hidalgo",
-    place: "Morelia, México",
+    degree: "Ingeniero Industrial",
+    inst: "Instituto Tecnológico de Morelia",
+    place: "Morelia, Michoacán, México",
     years: "",
-    notes: "Formación base en ciencias administrativas y contables.",
+    notes:
+      "Formación base en ingeniería industrial, métodos cuantitativos y gestión de procesos.",
   },
 ];
 
 export const experience = [
   {
-    role: "Profesor e Investigador Titular",
-    inst: "Universidad Michoacana de San Nicolás de Hidalgo — FCCA",
+    role: "Investigador Titular “C” de Tiempo Completo",
+    inst: "Facultad de Contaduría y Ciencias Administrativas — UMSNH",
     place: "Morelia, Michoacán",
-    years: "2000 — Presente",
+    years: "Presente",
     bullets: [
-      "Docencia en licenciatura y posgrado en las áreas de administración, métodos cuantitativos y sistemas expertos.",
-      "Dirección de tesis de maestría y doctorado en el Programa de Doctorado en Administración (PNPC).",
-      "Coordinación de proyectos de investigación financiados por el CIC-UMSNH.",
+      "Docencia en licenciatura y posgrado en el área de administración, métodos cuantitativos y gestión empresarial.",
+      "Dirección de tesis de maestría y doctorado en los programas de posgrado de la FCCA-UMSNH.",
+      "Investigación en modelos cuantitativos para la toma de decisiones y mejora empresarial.",
     ],
   },
   {
-    role: "Integrante — Cuerpo Académico Consolidado UMSNH-CA-11",
+    role: "Representante — Cuerpo Académico “Economía y Modelos Cuantitativos”",
+    inst: "UMSNH — FCCA",
+    place: "Morelia, Michoacán",
+    years: "Presente",
+    bullets: [
+      "Coordinación de la línea de investigación en modelos cuantitativos aplicados a la decisión empresarial.",
+      "Producción académica conjunta en editoriales internacionales (Springer Nature, IEEE) y revistas arbitradas.",
+    ],
+  },
+  {
+    role: "Núcleo Académico — Doctorado en Ciencias Empresariales Internacionales",
     inst: "UMSNH",
     place: "Morelia, Michoacán",
-    years: "2021 — Presente",
+    years: "2010 — Presente",
     bullets: [
-      "Participación en la línea de investigación de gestión, innovación y sistemas inteligentes.",
-      "Producción académica conjunta en revistas y editoriales indexadas (Springer Nature, IEEE).",
+      "Miembro del núcleo académico del programa doctoral con orientación internacional.",
+      "Dirección y codirección de tesis doctorales.",
+    ],
+  },
+  {
+    role: "Integrante — Red Temática CONACYT “Complejidad, Ciencia y Sociedad”",
+    inst: "CONACYT / CONAHCYT",
+    place: "México",
+    years: "2011 — Presente",
+    bullets: [
+      "Participación en la red temática sobre complejidad aplicada a fenómenos sociales y económicos.",
     ],
   },
   {
@@ -113,10 +134,11 @@ export const publications = [
   {
     year: 2023,
     title:
-      "Efectos olvidados en la valoración del turismo",
-    venue: "Turismo en… — CIET Argentina",
+      "Efectos olvidados en la valoración de la responsabilidad social empresarial: Caso Pueblo Mágico Pátzcuaro, México",
+    venue:
+      "Turismo en tiempos de cambio. Los desafíos del Siglo XXI — CIET, Buenos Aires",
     type: "Capítulo de libro",
-    tag: "Book chapter",
+    tag: "ISBN 978-987-20540-8-3",
   },
   {
     year: 2022,
@@ -218,6 +240,17 @@ export const publications = [
   },
 ];
 
+export const books = [
+  {
+    title: "Gestión del Conocimiento en las Pequeñas y Medianas Empresas",
+    desc: "Libro de autoría que sistematiza modelos y prácticas de gestión del conocimiento aplicables a PyMEs, con base en su investigación doctoral y posdoctoral.",
+  },
+  {
+    title: "Matemáticas Financieras para la Toma de Decisiones",
+    desc: "Texto orientado a estudiantes y profesionales, integra herramientas cuantitativas y casos aplicados a la evaluación financiera de proyectos.",
+  },
+];
+
 export const projects = [
   {
     title: "Aplicación de la Lógica Borrosa en el análisis empresarial",
@@ -262,11 +295,13 @@ export const awards = [
   { year: "2019", title: "Investigador del Estado de Michoacán", issuer: "Gobierno de Michoacán" },
   { year: "2018 — 2021", title: "Estímulo Nivel IX ESDEPED", issuer: "UMSNH" },
   { year: "2018 — 2020", title: "Estímulo Nivel II U040", issuer: "UMSNH" },
-  { year: "2017 — 2023", title: "Perfil Deseable PRODEP", issuer: "SEP — PRODEP" },
+  { year: "2017 — 2023", title: "Perfil Deseable PRODEP (renovaciones sucesivas)", issuer: "SEP — PRODEP" },
   { year: "2014 — 2020", title: "SNI Nivel I", issuer: "CONACYT" },
-  { year: "2014", title: "Investigador del Estado de Michoacán", issuer: "Gobierno de Michoacán" },
   { year: "2014", title: "Evaluador RCEA", issuer: "CONACYT" },
-  { year: "2006 — 2017", title: "Perfil Deseable PRODEP (renovaciones sucesivas)", issuer: "SEP — PRODEP" },
+  { year: "2011 — Presente", title: "Red Temática “Complejidad, Ciencia y Sociedad”", issuer: "CONACYT" },
+  { year: "2010 — Presente", title: "Núcleo Académico — Doctorado en Ciencias Empresariales Internacionales", issuer: "UMSNH" },
+  { year: "Desde 2006", title: "Investigador del Estado de Michoacán", issuer: "Gobierno de Michoacán" },
+  { year: "Desde 2003", title: "Perfil Deseable PRODEP (primera obtención)", issuer: "SEP — PRODEP" },
 ];
 
 export const evaluations = [
